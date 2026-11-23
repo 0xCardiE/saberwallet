@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · Saber Wallet</title>
+  <meta name="description" content="How Saber Wallet uses data. Keys stay on your device. No server, no analytics.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.png" alt="">Saber Wallet</a>
+      <nav class="nav">
+        <a href="./#features">Features</a>
+        <a href="./#security">Security</a>
+        <a href="./#faq">FAQ</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <a class="btn btn-primary btn-small" href="./#install"><span class="label-long">Add to</span> Chrome</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="doc">
+      <h1>Privacy policy</h1>
+      <p class="updated">Last update: 23 November 2026</p>
+
+      <p>Saber Wallet ("Saber") is a self-custody wallet for the Solana blockchain. Self-custody means that only you hold the keys. This policy tells which data Saber uses and where the data goes.</p>
+
+      <h2>Summary</h2>
+      <ul>
+        <li>Saber keeps your recovery phrase and private keys on your device, encrypted. Saber does not send them anywhere.</li>
+        <li>The Saber project has no server. Saber does not collect analytics and does not track you.</li>
+        <li>To show balances, Saber sends your public wallet address to the blockchain services in the list below.</li>
+      </ul>
+
+      <h2>Data that stays on your device</h2>
+      <ul>
+        <li><strong>Recovery phrase and private keys.</strong> Saber encrypts them with AES-256-GCM. The encryption key comes from your password. Saber keeps the encrypted data in the storage of the extension in your browser.</li>
+        <li><strong>Unlocked keys.</strong> When you unlock the wallet, Saber keeps the keys in the session memory of the browser. Auto-lock and Lock clear them. Chrome also clears them when you close the browser.</li>
+        <li><strong>Settings and cached data.</strong> Account names, settings, cached balances, and your transaction history stay in the storage of the extension.</li>
+      </ul>
+
+      <h2>Data that Saber sends</h2>
+      <p>A public wallet address is visible to all people on the Solana blockchain. To show balances and to send transactions, Saber sends your public wallet address to these services:</p>
+      <ul>
+        <li>The Solana RPC services on your list. The default is PublicNode. You can add your own, for example Helius.</li>
+        <li>Jupiter: token balances, prices, and swaps.</li>
+        <li>Raydium and DexScreener: prices, and swaps when Jupiter is busy.</li>
+        <li>Phoenix: perps markets and your perps account.</li>
+        <li>Kamino, Meteora, Orca, and Raydium: DeFi positions.</li>
+        <li>Magic Eden: NFTs.</li>
+        <li>Stakewiz: the list of validators.</li>
+      </ul>
+      <p>These services can also see your IP address. Each service has its own privacy policy. When you approve a transaction, Saber sends the signed transaction to the Solana network through your RPC or through the swap service.</p>
+
+      <h2>Data that Saber does not collect</h2>
+      <p>Saber does not collect analytics, crash reports, or usage data. Saber does not show advertisements. Saber does not sell, rent, or share data with any person.</p>
+
+      <h2>Permissions</h2>
+      <p>Saber asks Chrome for these permissions:</p>
+      <ul>
+        <li><strong>storage</strong> and <strong>unlimitedStorage</strong>: to keep the encrypted wallet, the settings, and the transaction history on your device.</li>
+        <li><strong>sidePanel</strong>: to show the wallet in the Chrome side panel.</li>
+        <li><strong>alarms</strong>: to lock the wallet after the auto-lock time, and to load the transaction history in the background.</li>
+        <li><strong>Access to the services in the list above</strong>: to read balances and to send transactions that you approve. Saber asks for access to other addresses only when you add your own RPC.</li>
+      </ul>
+
+      <h2>Remove your data</h2>
+      <p>Select <strong>Settings → Remove wallet from this browser</strong>, or remove the extension. Chrome then deletes all data of the extension. Keep your recovery phrase offline, because Saber cannot restore your wallet without it.</p>
+
+      <h2>Children</h2>
+      <p>Saber is not for people younger than 18 years.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>When this policy changes, the new version shows on this page with a new date.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about privacy, see the <a href="support.html">support page</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.png" alt="">Saber Wallet</a>
+      <span>Self-custody Solana wallet. No server. No analytics.</span>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

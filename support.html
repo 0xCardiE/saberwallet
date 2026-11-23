@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · Saber Wallet</title>
+  <meta name="description" content="Get help with Saber Wallet, the self-custody Solana wallet for Chrome.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.png" alt="">Saber Wallet</a>
+      <nav class="nav">
+        <a href="./#features">Features</a>
+        <a href="./#security">Security</a>
+        <a href="./#faq">FAQ</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <a class="btn btn-primary btn-small" href="./#install"><span class="label-long">Add to</span> Chrome</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="doc">
+      <h1>Support</h1>
+      <p class="updated">Help for Saber Wallet</p>
+
+      <h2>Before you ask</h2>
+      <ul>
+        <li><strong>Never share your recovery phrase or private key.</strong> Saber support never asks for them. Any person who asks for them is a scammer.</li>
+        <li>Read the <a href="./#faq">FAQ</a>.</li>
+      </ul>
+
+      <h2>Common problems</h2>
+      <ul>
+        <li><strong>Balances do not load.</strong> Select the refresh button in the wallet. Free public services can be slow. Add a free RPC key in <strong>Settings → Solana network</strong> for faster data.</li>
+        <li><strong>A swap is blocked.</strong> Saber blocks a transaction if the simulation shows that it takes more than the swap amount, or that it fails. Get a new quote and try again.</li>
+        <li><strong>Perps activation fails.</strong> The account needs about 0.028 SOL for the Phoenix account rent and the fee.</li>
+        <li><strong>I forgot my password.</strong> Select "Forgot password? Import with recovery phrase" on the unlock screen, and import the phrase again with a new password.</li>
+      </ul>
+
+      <h2>Report a problem</h2>
+      <p>Open an issue in the <a href="https://github.com/0xCardiE/saberwallet/issues">Saber Wallet GitHub project</a>. Tell us the Saber version, the browser, the steps, and what you saw. Do not include keys, recovery phrases, or passwords.</p>
+
+      <h2>Security problems</h2>
+      <p>If you find a security problem, open an issue with the title "Security" and no details. We then contact you for the details.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.png" alt="">Saber Wallet</a>
+      <span>Self-custody Solana wallet. No server. No analytics.</span>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
